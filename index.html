@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        window.addEventListener('scroll', () => {
+            fixOnScroll('secondaryBackground', window.innerHeight)
+        })
+
+        let fixOnScroll = (classSelector, offsetTop = window.innerHeight) => {
+            let elements = document.getElementsByClassName(classSelector)
+            let full = elements[0].offsetTop + elements[0].offsetHeight
+            let fixPosition = window.scrollY + offsetTop
+
+            let elementsArray = [...elements]
+
+            if (fixPosition >= full) {
+                elementsArray.map(el => el.style.backgroundAttachment = 'fixed')
+            } else {
+                elementsArray.map(el => el.style.backgroundAttachment = 'scroll')
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="mainBackground slideContainer slide1">
+        <div class="header">
+            <span>
+                #DEMO<br/>
+                MARS COLONIZATION, IMPOSSIBLE WITHOUT<br/>
+                KUSAMA<br/>
+            </span>
+        </div>
+        <div class='textBlocks'>
+            <div class='firstColl'>
+                During the Hackusama — Hack on Polkadot’s Wild Cousin, our team has studied the UN Agreement Governing
+                the Activities of States on the Moon and Other Celestial Bodies from 1979. Based on the studied
+                material, it was proposed to consider the interplanetary architecture of the Kusama network and create
+                software modules that implement article 6 “On freedom of scientific investigation”, article 7 “On
+                preventing disruption of the existing balance of its environment” and article 9 “On the establishment of
+                manned and unmanned stations”.
+                <br />
+                During the experiment, the rover traverses the route within the boundaries of the new habitable station.
+                Then he publishes odometry and photos to the Kusama network. This information may be enough for SpaceY
+                to start designing and selling living spaces on Mars using the adjacent slot for its parachain.
+            </div>
+            <div class='secondColl'>
+                <div class='row1'>
+                    <p>The blockchain for data storage was created by the UN Agreement Governing the Activities of
+                        States on the Moon and Other Celestial Bodies from 1979.</p>
+                    <p>The IoT infrastructure of the base camp “Mars-1” was assembled, and satellite equipment was used
+                        for transmitting data to the Kusama on Mars Parachain.</p>
+                    <p>The hardware and software parts for the rover “Mars-2” were developed and the rover was connected
+                        to the Kusama on Mars Parachain.</p>
+                </div>
+                <div class='row2'>
+                    <p class='withCodeSpacing'>
+                        $ robonomics io
+                        <br />
+                        robonomics-io 0.18.0
+                        <br />
+                        Run I/O actions using Robonomics Framework
+                    </p>
+                    <p class='withCodeSpacing'>
+                        USAGE:
+                        <br />
+                        <span class='codeIndent'>
+                            robonomics id [FLAGS] [OPTIONS] &lt;SUBCOMMAND&gt;
+                        </span>
+                    </p>
+                    <p class='withCodeSpacing'>
+                        SUBCOMMANDS:
+                        <br />
+                    <div class='subcommands'>
+                        <div class='subcommandsLine'>
+                            <div class='subcommandsHeader'>help</div>
+                            <div>Prints this message or the help of the given subcommand(s)</div>
+                        </div>
+                        <div class="subcommandsLine">
+                            <div class='subcommandsHeader'>read</div>
+                            <div>Read information from device</div>
+                        </div>
+                        <div class="subcommandsLine">
+                            <div class='subcommandsHeader'>write</div>
+                            <div>Write information into device</div>
+                        </div>
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainBackground slideContainer slide2">
+        <div class="textBlocks">
+            <div class='row2'>
+                <p class='withCodeSpacing'>
+                    $ robonomics io
+                    <br />
+                    robonomics-io 0.18.0
+                    <br />
+                    Run I/O actions using Robonomics Framework
+                </p>
+                <p class='withCodeSpacing'>
+                    USAGE:
+                    <br />
+                    <span class='codeIndent'>
+                        robonomics id [FLAGS] [OPTIONS] &lt;SUBCOMMAND&gt;
+                    </span>
+                </p>
+                <p class='withCodeSpacing'>
+                    SUBCOMMANDS:
+                    <br />
+                <div class='subcommands'>
+                    <div class='subcommandsLine'>
+                        <div class='subcommandsHeader'>help</div>
+                        <div>Prints this message or the help of the given subcommand(s)</div>
+                    </div>
+                    <div class="subcommandsLine">
+                        <div class='subcommandsHeader'>read</div>
+                        <div>Read information from device</div>
+                    </div>
+                    <div class="subcommandsLine">
+                        <div class='subcommandsHeader'>write</div>
+                        <div>Write information into device</div>
+                    </div>
+                </div>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="mainBackground slideContainer slide3">
+        <div class="textBlocks">
+            <div class='row2'>
+                <p class='withCodeSpacing'>
+                    $ robonomics io
+                    <br />
+                    robonomics-io 0.18.0
+                    <br />
+                    Run I/O actions using Robonomics Framework
+                </p>
+                <p class='withCodeSpacing'>
+                    USAGE:
+                    <br />
+                    <span class='codeIndent'>
+                        robonomics id [FLAGS] [OPTIONS] &lt;SUBCOMMAND&gt;
+                    </span>
+                </p>
+                <p class='withCodeSpacing'>
+                    SUBCOMMANDS:
+                    <br />
+                <div class='subcommands'>
+                    <div class='subcommandsLine'>
+                        <div class='subcommandsHeader'>help</div>
+                        <div>Prints this message or the help of the given subcommand(s)</div>
+                    </div>
+                    <div class="subcommandsLine">
+                        <div class='subcommandsHeader'>read</div>
+                        <div>Read information from device</div>
+                    </div>
+                    <div class="subcommandsLine">
+                        <div class='subcommandsHeader'>write</div>
+                        <div>Write information into device</div>
+                    </div>
+                </div>
+                </p>
+            </div>
+            <div class='video'>
+                <!-- <iframe width="420" height="" href="https://www.youtube.com/watch?v=31zXeUq3htE"></iframe> -->
+                <iframe src="https://www.youtube.com/embed/31zXeUq3htE" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <div class='secondaryBackground slideContainer centered slide4'>
+        <div class="header">
+            <span>
+                #DEMO<br/>
+                MARS COLONIZATION, IMPOSSIBLE WITHOUT<br/>
+                KUSAMA<br/>
+            </span>
+        </div>
+        <div class='textBlocks'>
+            <p>During the Hackusama — Hack on Polkadot’s Wild Cousin, our team has studied the UN Agreement Governing
+                the Activities of States on the Moon and Other Celestial Bodies from 1979. Based on the studied
+                material, it was proposed to consider the interplanetary architecture of the Kusama network and create
+                software modules that implement article 6 “On freedom of scientific investigation”, article 7 “On
+                preventing disruption of the existing balance of its environment” and article 9 “On the establishment of
+                manned and unmanned stations”.</p>
+            <p>During the experiment, the rover traverses the route within the boundaries of the new habitable station.
+                Then he publishes odometry and photos to the Kusama network. This information may be enough for SpaceY
+                to start designing and selling living spaces on Mars using the adjacent slot for its parachain.</p>
+            <p class='topMargin'>The blockchain for data storage was created by the UN Agreement Governing the
+                Activities of States on the Moon and Other Celestial Bodies from 1979.</p>
+            <p>The IoT infrastructure of the base camp “Mars-1” was assembled, and satellite equipment was used for
+                transmitting data to the Kusama on Mars Parachain.</p>
+            <p>The hardware and software parts for the rover “Mars-2” were developed and the rover was connected to the
+                Kusama on Mars Parachain.</p>
+        </div>
+    </div>
+
+    <div class='secondaryBackground slideContainer centered slide5'>
+        <div class="header">
+            <span>
+                <span>#DEMO</span><br/>
+                <span>MARS COLONIZATION, IMPOSSIBLE WITHOUT</span><br/>
+                <span>KUSAMA</span><br/>
+            </span>
+        </div>
+        <div class='textBlocks'>
+            <div class='crossedBackground'>
+                <p>In 2020 the very first hackaton without Polcadot and Kusama ecosystem was held - <a target="_blank"
+                        href="https://polkadot.network/blog/join-hackusama-hack-on-polkadots-wild-cousin/"
+                        class="blueLink">Hackusama</a></p>
+                <p class='topMargin'><a target="_blank" href="https://robonomics.network/"
+                        class="blueLink">Robonomics</a> participated in Hackusama with demo «Mars colonization, an
+                    architecture
+                    impossible without KUSAMA».</p>
+            </div>
+            <div class='afterCorssedPadding'>
+                <p>We inspired with an idea of architecture impossible without KUSAMA: the Kusama architecture allows a
+                    dedicated blockchain to live on Mars on its own and at the same time provides other blockchains on
+                    Earth to communicate with it.
+                </p>
+                <p>
+                    Kusama will allow finalization of data from Mars on Earth and communication with Mars through
+                    transactions from other parachains using XCMP.
+                </p>
+                <p class='blackBackground'><span>During the hackaton we created</span></p>
+                <br />
+                <p>The blockchain for data storage was created in accordance with the UN Agreement Governing the
+                    Activities of States on the Moon and Other Celestial Bodies from 1979.
+                </p>
+                <p class="wordBreakAll">The dapp https://mars.robonomics.network/ is connected to the Parachain and presents data collected
+                    by Mars-1 and Mars-2 agents.
+                </p>
+                <p>The IoT infrastructure of the base camp “Mars -1” was assembled, and satellite equipment was used for
+                    </a>transmitting data to the Kusama on Mars Parachain. Used <a target="_blank"
+                        href="https://github.com/Vourhey/hackusama#robonomics-io" class="blueLink">robonomics io</a>.
+                </p>
+                <p>The hardware and software parts for the rover “Mars-2” were developed and the rover was connected to
+                    the Kusama on Mars Parachain. <a target="_blank"
+                        href="https://github.com/Vourhey/hackusama/tree/master/Rover" class="blueLink">Source</a>.</p>
+                <div class="robonomicsLogoContainer">
+                    <a target="_blank" href="https://robonomics.network/">
+                        <img class="robonomicsLogo" src='./assets/robonomicsLogo.svg' alt="robonomicsLogo" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
