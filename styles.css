@@ -151,6 +151,7 @@ a {
 
 .slide3 {
     padding: 200px 0 200px 10vw;
+    height: 100vh;
 }
 
 .video {
@@ -163,7 +164,7 @@ a {
     height: 394px;
     position: relative;
     left: 300px;
-    top: -150px;
+    top: -100px;
     transition: all .5s;
 }
 
@@ -232,10 +233,21 @@ p.blackBackground ~ p {
     word-break: break-all;
 }
 
+@media screen and (max-width: 1800px){
+    .slide3 .video {
+        left: 100px;
+        transition: all .5s;
+    }
+}
+
 @media screen and (max-width: 1650px) {
     .slide4 .textBlocks, .slide5 .textBlocks {
         width: auto;
         max-width: 60vw;
+    }
+
+    .slide3 .video {
+        left: 0px;
     }
 }
 
@@ -245,12 +257,27 @@ p.blackBackground ~ p {
         width: auto;
         max-width: 65vw;
     }
+    .slide3 .video {
+        /* position: relative; */
+        left: -100px;
+    }
+    /* .slide3 { */
+        /* padding-left: 0; */
+    /* } */
 }
 
 @media screen and (max-width: 1300px) {
     .slide4 .textBlocks, .slide5 .textBlocks {
         width: auto;
         max-width: 70vw;
+    }
+    .slide3 .video {
+        left: -200px;
+        /* top: 50px; */
+
+    }
+    .slide3 .row2 {
+        margin-top: 100px;
     }
 }
 
@@ -263,11 +290,11 @@ p.blackBackground ~ p {
 }
 
 @media (max-width: 1150px) {
-    .video {
+    .slide3 .video {
         left: 0;
         height: auto;
     }
-    .video iframe {
+    .slide3 .video iframe {
         left: 10vw;
         max-width: 80vw;
         transition: all .5s;
@@ -307,6 +334,9 @@ p.blackBackground ~ p {
         .firstColl, .secondColl, .secondColl .row1 p {
             width: auto;
             max-width: 100%;
+        }
+        .slide3 .row2 {
+            width: auto;
         }
     }
 }
