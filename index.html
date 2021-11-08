@@ -5,28 +5,28 @@
     <link rel="stylesheet" type="text/css" href="./styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
-        window.addEventListener('scroll', () => {
-            fixOnScroll('secondaryBackground', window.innerHeight)
-        })
+        // window.addEventListener('scroll', () => {
+        //     fixOnScroll('secondaryBackground', window.innerHeight)
+        // })
 
-        let fixOnScroll = (classSelector, offsetTop = window.innerHeight) => {
-            let elements = document.getElementsByClassName(classSelector)
-            let full = elements[0].offsetTop + elements[0].offsetHeight
-            let fixPosition = window.scrollY + offsetTop
+        // let fixOnScroll = (classSelector, offsetTop = window.innerHeight) => {
+        //     let elements = document.getElementsByClassName(classSelector)
+        //     let full = elements[0].offsetTop + elements[0].offsetHeight
+        //     let fixPosition = window.scrollY + offsetTop
 
-            let elementsArray = [...elements]
+        //     let elementsArray = [...elements]
 
-            if (fixPosition >= full) {
-                elementsArray.map(el => el.style.backgroundAttachment = 'fixed')
-            } else {
-                elementsArray.map(el => el.style.backgroundAttachment = 'scroll')
-            }
-        }
+        //     if (fixPosition >= full) {
+        //         elementsArray.map(el => el.style.backgroundAttachment = 'fixed')
+        //     } else {
+        //         elementsArray.map(el => el.style.backgroundAttachment = 'scroll')
+        //     }
+        // }
     </script>
 </head>
 
 <body>
-    <div class="mainBackground slideContainer slide1">
+    <!-- <div class="mainBackground slideContainer slide1">
         <div class="header">
             <span>
                 #DEMO<br/>
@@ -130,7 +130,7 @@
                 </p>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="mainBackground slideContainer slide3">
         <div class="textBlocks">
             <div class='row2'>
@@ -177,7 +177,7 @@
 
     </div>
 
-    <div class='secondaryBackground slideContainer centered slide4'>
+    <!-- <div class='secondaryBackground slideContainer centered slide4'>
         <div class="header">
             <span>
                 #DEMO<br/>
@@ -202,7 +202,7 @@
             <p>The hardware and software parts for the rover “Mars-2” were developed and the rover was connected to the
                 Kusama on Mars Parachain.</p>
         </div>
-    </div>
+    </div> -->
 
     <div class='secondaryBackground slideContainer centered slide5'>
         <div class="header">
