@@ -5,6 +5,7 @@
 }
 
 html, body {
+
     transition: all .5s;
     margin: 0;
     padding: 0;
@@ -207,6 +208,7 @@ a {
     margin-top: 30px;
 }
 .blackBackground {
+    margin-top: 80px !important;
     color: white;
 }
 
@@ -216,6 +218,13 @@ a {
     box-shadow: -5px 0 0 black, 5px 0 0 black;
 }
 
+/* .blackBackground ~ p:first-child {
+    margin-top: 0 !important;
+} */
+
+.no-margin {
+    margin-top: 0 !important;
+}
 
 .blueLink {
     color: #1717B0;
