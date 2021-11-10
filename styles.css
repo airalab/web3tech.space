@@ -178,11 +178,6 @@ a {
     padding-bottom: 200px;
 }
 
-.slide4 .textBlocks, .slide5 .textBlocks {
-    /* font-weight: normal; */
-}
-
-
 .slide4 .textBlocks p.topMargin {
     margin-top: 30px;
 }
@@ -192,7 +187,7 @@ a {
 }
 
 .crossedBackground {
-    background-image: url('./assets/crossedBackgroundSmall.png');
+    background-image: url('./assets/crossedBackgroundHighRes.png');
     font-size: 17pt;
     padding: 40px 60px 40px 60px;
     background-repeat: no-repeat;
@@ -383,10 +378,11 @@ a {
         margin-top: -50px;
     }
     .slide5 {
-        padding-bottom: 100px;
+        padding: 0 0 100px 0;
+        /* padding-bottom: 100px; */
     }
     .afterCorssedPadding {
-        padding: 0 30px;
+        padding: 0 50px;
     }
 }
 
